@@ -58,6 +58,9 @@ section {
 @media screen and (max-width: 480px) {
     section .card {
         width: 90%;
+        background: transparent;
+        box-shadow: none;
+        border: none;
     }
 }
 

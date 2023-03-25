@@ -80,8 +80,8 @@ section .card .imgText .imgBx{
 
 @media screen and (max-width: 480px) {
     section .card .imgText .imgBx{
-        width: 100px;
-        height: 100px;
+        width: 87px;
+        height: 87px;
     }
 }
 

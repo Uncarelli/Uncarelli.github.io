@@ -57,7 +57,7 @@ section {
 
 @media screen and (max-width: 480px) {
     section .card {
-        width: 90%;
+        width: 250px;
         background: transparent;
         box-shadow: none;
         border: none;
@@ -128,7 +128,7 @@ section .card .imgText h3 span{
     }
     section .card .imgText h4{
         margin-right: 2%;
-    margin-left: 2%;
+        margin-left: 2%;
     }
 }
 

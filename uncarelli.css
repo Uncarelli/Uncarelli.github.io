@@ -18,6 +18,11 @@ section {
     align-items: center;
     transition: background 0.5s;
   }
+
+  section::selection {
+    color: #e3e3e3;
+    background: rgba(255, 255, 255, 0.304);
+  }
   
   section::before {
     content: "";
@@ -104,8 +109,12 @@ section .card .imgText .imgBx img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
+
+section .card .imgText .imgBx img::selection {
+    color: #e3e3e3;
+    background: rgba(255, 255, 255, 0.304);
+  }
 
 section .card .imgText h3{
     font-weight: bolder;
@@ -114,6 +123,17 @@ section .card .imgText h3{
     text-align: center;
     color:#8B0000;
 }
+
+section .card .imgText h3::selection {
+    color: #e3e3e3;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.304);
+  }
+
+section .card .imgText h3::selection {
+    color: #e3e3e3;
+    background: rgba(255, 255, 255, 0.304);
+  }
 
 section .card .imgText h4{
     font-weight: bolder;
@@ -125,12 +145,22 @@ section .card .imgText h4{
     color:#e3e3e3;
 }
 
+section .card .imgText h4::selection {
+    color: #e3e3e3;
+    background: rgba(255, 255, 255, 0.304);
+  }
+
 section .card .imgText h3 span{
     font-weight: 400;
     color: #ffffff;
     font-size: 0.75em;
     transition: 0.3s;
 }
+
+section .card .imgText h3 span::selection {
+    color: #e3e3e3;
+    background: rgba(255, 255, 255, 0.304);
+  }
 
 @media screen and (max-width: 480px) {
     section .card .imgText h3 span{

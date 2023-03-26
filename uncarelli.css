@@ -236,7 +236,7 @@ section .card .sci li a:hover:before{
 }
 
 #preloader {
-    background: #000 url(loader2.gif) no-repeat center center;
+    background: #000 url(loader3.gif) no-repeat center center;
     background-size: 200px;
     height: 100vh;
     width: 100%;

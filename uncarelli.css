@@ -11,7 +11,7 @@
 
 section {
     position: relative;
-    background: url(test1.jpg) center center/cover no-repeat;
+    background: url(test1.webp) center center/cover no-repeat;
     min-height: 100vh;
     display: flex;
     justify-content: center;

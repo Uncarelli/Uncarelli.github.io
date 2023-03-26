@@ -97,8 +97,9 @@ section .card .imgText .imgBx{
 
 @media screen and (max-width: 480px) {
     section .card .imgText .imgBx{
-        width: 87px;
-        height: 87px;
+        width: 70px;
+        height: 70px;
+        content: url('uncarelli1.webp');
     }
 }
 

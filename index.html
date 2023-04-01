@@ -11,7 +11,7 @@
     <meta property="og:title" content="Uncarelli" />
     <meta property="og:description" content="Welcome to my official website. Here, you will find a comprehensive collection of my accounts, providing you with an in-depth look into my background and accomplishments. I encourage you to explore these accounts and learn more about me." />
     <meta property="og:image" content="uncarelli.webp" />
-<body>
+<body oncontexmenu ="return false;">
 
     <div id="preloader"></div>
 
@@ -30,7 +30,6 @@
                     <li><a aria-label="Twitter-link" href="https://twitter.com/Uncarelli"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                     <li><a aria-label="Instagram-link" href="https://instagram.com/uncarelli?igshid=ZDdkNTZiNTM="><i class="fa fa-instagram" aria-hidden="true"></i></i></a></li>
                     <li><a aria-label="Pinterest-link" href="https://www.pinterest.com/Uncarelli/"><i class="fa fa-pinterest" aria-hidden="true"></i></i></i></a></li>
-                    <li><a aria-label="Github-link" href="https://github.com/Uncarelli"><i class="fa fa-github" aria-hidden="true"></i></i></i></a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +43,33 @@
             loader.style.display = "none";
         }, 1700);
         });
+        
+        document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
 
+document.onkeydown=function(e)
+{
+    if(event.keyCode == 123)
+    {
+        return false;
+    }
+
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+    {
+        return flase;
+    }
+
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0))
+    {
+        return false;
+    }
+
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+    {
+        return false;
+    }
+}
     </script>
 </body>
 </html>

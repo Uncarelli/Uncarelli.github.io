@@ -219,9 +219,9 @@ section .card .sci li a{
         position: relative;
         width: 40px;
         height: 40px;
-        backdrop-filter: blur(10px);
-        color: #6e6e6e;
-        border: 1px solid #6e6e6e61;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow:  5px 5px 11px #bebebe,
+             -5px -5px 11px #ffffff;
     }
 }
 

@@ -3,8 +3,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
-    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2') unicode-range(U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB), url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2') unicode-range(U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF), url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2') unicode-range(U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD);
   }
 
 @font-face {
@@ -75,7 +74,6 @@ section {
     align-items: center;
     transition: background 0.5s;
     z-index: 100px;
-    transition: 0.3s;
   }
 
 @media screen and (max-width: 480px) {
@@ -103,11 +101,10 @@ section .card .imgText .imgBx{
     position: relative;
     width: 120px;
     height: 120px;
-    border-radius: 150px;
+    border-radius: 50%;
     box-shadow:  12px 12px 24px #bebebe,
              -12px -12px 24px #ffffff;
     overflow: hidden;
-    border-radius: 50%;
     margin-bottom: 15px;
     transition: 0.3s;
 }
@@ -121,46 +118,30 @@ section .card .imgText .imgBx img{
     object-fit: cover;
 }
 
-section .card .imgText .imgBx img::selection {
-    color: #e3e3e3;
-    background: rgba(255, 255, 255, 0.304);
-  }
-
 section .card .imgText h3{
-    font-weight: bolder;
-    font-size: 1.4em;
+    font-size: 1.6em;
     line-height: 1.2em;
     text-align: center;
-    color:#000;
+    font-weight: bold;
+    background: linear-gradient(to right, #4b5c77 0%, #2d364a 20%, #232b3f 40%, #1a2235 60%, #10182b 80%, #070d20 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: default;
 }
 
-
-section .card .imgText h3::selection {
-    color: #e3e3e3;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.304);
-  }
-
-section .card .imgText h3::selection {
-    color: #e3e3e3;
-    background: rgba(255, 255, 255, 0.304);
-  }
-
 section .card .imgText h4{
-    font-weight: bolder;
+    font-weight: bold;
     margin-right: 70px;
     margin-left: 70px;
     margin-bottom: 10px;
     font-size: 12px;
     line-height: 1.2em;
     text-align: center;
-    color:#000000;
+    background: linear-gradient(to bottom right, #354154 0%, #2d364a 20%, #232b3f 40%, #1a2235 60%, #10182b 80%, #070d20 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: default;
 }
-
-section .card .imgText h4::selection {
-    color: #e3e3e3;
-    background: rgba(255, 255, 255, 0.304);
-  }
 
 section .card .imgText h3 span{
     font-weight: 400;
@@ -168,11 +149,6 @@ section .card .imgText h3 span{
     font-size: 0.75em;
     transition: 0.3s;
 }
-
-section .card .imgText h3 span::selection {
-    color: #e3e3e3;
-    background: rgba(255, 255, 255, 0.304);
-  }
 
 @media screen and (max-width: 480px) {
     section .card .imgText h3 span{
@@ -194,7 +170,7 @@ section .card .sci li{
     list-style: none;
 }
 
-section .card .sci li a{
+.yt{
     position: relative;
     width: 50px;
     height: 50px;
@@ -210,7 +186,100 @@ section .card .sci li a{
     text-decoration: none;
     border-radius: 50%;
     font-size: 20px;
-    transition: 0.3s;
+    transition: 0.2s;
+}
+
+.yt:hover{
+    border-radius: 27px;
+background: #c4302b;
+box-shadow: inset 4px 4px 8px #a72925,
+            inset -4px -4px 8px #e13731;
+    color:#e0e0e0;
+}
+
+.twit{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 11px #bebebe,
+             -5px -5px 11px #ffffff;
+    color: #313131;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.twit:hover{
+    border-radius: 150px;
+background: #00acee;
+box-shadow: inset 4px 4px 7px #0092ca,
+            inset -4px -4px 7px #00c6ff;
+    color:#e0e0e0;
+}
+
+.insta{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 11px #bebebe,
+             -5px -5px 11px #ffffff;
+    color: #313131;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.insta:hover{
+    border-radius: 150px;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    box-shadow: inset 4px 4px 7px rgba(0, 0, 0, 0.25),
+                inset -4px -4px 7px rgba(255, 255, 255, 0.3);
+    color: #e0e0e0;
+}
+
+.pin{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 11px #bebebe,
+             -5px -5px 11px #ffffff;
+    color: #313131;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.pin:hover{
+    border-radius: 27px;
+background: #c8232c;
+box-shadow: inset 4px 4px 8px #aa1e25,
+            inset -4px -4px 8px #e62833;
+    color:#e0e0e0;
 }
 
 @media screen and (max-width: 480px) {
@@ -219,20 +288,11 @@ section .card .sci li a{
         position: relative;
         width: 40px;
         height: 40px;
-        background: linear-gradient(145deg, #f0f0f0, #cacaca);
-        box-shadow:  5px 5px 11px #bebebe,
-             -5px -5px 11px #ffffff;
     }
 }
 
-section .card .sci li a:hover{
-    border-radius: 150px;
-    background: #e0e0e0;
-    box-shadow: inset 5px 5px 11px #bebebe,
-            inset -5px -5px 11px #ffffff;
-    color:#000;
-    transition: 0.2s;
-}
+
+
 
 section .card .sci li a .fa{
     position: relative;
